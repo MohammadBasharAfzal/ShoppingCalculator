@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Calculator</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section id="header">
+        <div id="header-container">
+            <button id="headerPop">
+                <h3 id="buy">Bashar Electronics</h3>
+            </button>
+        </div>
+    </section>
+    <section id="footer">   
+        <section id="items">                            <!--flex column-->
+            <div id="row-1" class="rowDesign">          <!--flex row-->
+                <div class="image-container" id="monitor-container">           <!--flex column-->
+                    <img src="./media/LG_monitor.webp" alt="monitor" class="imagesStyle">
+                    <div class="add-items">             <!--flex row-->
+                        <button class="buttonStyle add" id="addMonitor" type="button" onclick="addMonitorCount('monitorCount', 'totalItemsCounter', 'totalCartPrice')">+</button>
+                        <button type="button" id="monitorCount" class="buttonStyle itemQuantity">0  </button>
+                        <button class="buttonStyle minus" id="minusMonitor" type="button" onclick="substractMonitorCount('monitorCount', 'totalItemsCounter', 'totalCartPrice')">-</button>
+                    </div>
+                    <div>
+                        <button type="button" class="buttonStyle price">Price : 100 $ / Pc</button>
+                    </div>
+                </div>
+                <div class="image-container" id="keyboard-container">
+                    <img src="./media/Keyboard.jpg" alt="keyboard" class="imagesStyle">
+                    <div class="add-items">             <!--flex row-->
+                        <button class="buttonStyle add" id="addKeyboard" type="button" onclick="addKeyboardCount('keyboardCount', 'totalItemsCounter', 'totalCartPrice')">+</button>
+                        <button type="button" id="keyboardCount" class="buttonStyle itemQuantity">0 </button>
+                        <button class="buttonStyle minus" id="minusKeyboard" type="button" onclick="substractKeyboardCount('keyboardCount', 'totalItemsCounter', 'totalCartPrice')">-</button>
+                    </div>
+                    <div>
+                        <button type="button" class="buttonStyle price">Price : 6 $ / Pc</button>
+                    </div>
+                </div>
+                <div class="image-container" id="CPU-container">
+                    <img src="./media/CPU.webp" alt="CPU" class="imagesStyle">
+                    <div class="add-items">             <!--flex row-->
+                        <button class="buttonStyle add" id="addCPU" type="button" onclick="addCPUCount('cpuCount', 'totalItemsCounter', 'totalCartPrice')">+</button>
+                        <button type="button" id="cpuCount" class="buttonStyle itemQuantity">0 </button>
+                        <button class="buttonStyle minus" id="minusCPU" type="button" onclick="substractCPUCount('cpuCount', 'totalItemsCounter', 'totalCartPrice')">-</button>
+                    </div>
+                    <div>
+                        <button type="button" class="buttonStyle price">Price : 200 $ / Pc </button>
+                    </div>
+                </div>
+            </div>
+            <div id="row-2" class="rowDesign">          <!--flex row-->
+                <div class="image-container" id="mouse-container">
+                    <img src="./media/mouse.jpeg" alt="mouse" class="imagesStyle">
+                    <div class="add-items">             <!--flex row-->
+                        <button class="buttonStyle add" id="addMouse" type="button" onclick="addMouseCount('mouseCount', 'totalItemsCounter', 'totalCartPrice')">+</button>
+                        <button type="button" id="mouseCount" class="buttonStyle itemQuantity">0 </button>
+                        <button class="buttonStyle minus" id="minusMouse" type="button" onclick="substractMouseCount('mouseCount', 'totalItemsCounter', 'totalCartPrice')">-</button>
+                    </div>
+                    <div>
+                        <button type="button" class="buttonStyle price">Price : 6 $ / Pc</button>
+                    </div>
+                </div>
+                <div class="image-container" id="printer-container">
+                    <img src="./media/Printer.jpg" alt="printer" class="imagesStyle">
+                    <div class="add-items">             <!--flex row-->
+                        <button class="buttonStyle add" id="addPrinter" type="button" onclick="addPrinterCount('printerCount', 'totalItemsCounter', 'totalCartPrice')">+</button>
+                        <button type="button" id="printerCount" class="buttonStyle itemQuantity">0 </button>
+                        <button class="buttonStyle minus" id="minusPrinter" type="button" onclick="substractPrinterCount('printerCount', 'totalItemsCounter', 'totalCartPrice')">-</button>
+                    </div>
+                    <div>
+                        <button type="button" class="buttonStyle price">Price : 100 $ / Pc </button>
+                    </div>
+                </div>
+                <div class="image-container" id="webcam-container">
+                    <img src="./media/webcam.jpeg" alt="webcam" class="imagesStyle">
+                    <div class="add-items">             <!--flex row-->
+                        <button class="buttonStyle add" id="addWebcam" type="button" onclick="addWebcamCount('webcamCount', 'totalItemsCounter', 'totalCartPrice')">+</button>
+                        <button type="button" id="webcamCount" class="buttonStyle itemQuantity">0  </button>
+                        <button class="buttonStyle minus" id="minusWebcam" type="button" onclick="substractWebcamCount('webcamCount', 'totalItemsCounter', 'totalCartPrice')">-</button>
+                    </div>
+                    <div>
+                        <button type="button" class="buttonStyle price">Price : 30 $ / Pc </button> 
+                    </div>
+                </div>           
+            </div>
+        </section>
+        <section id="calculation">                      <!--flex column-->
+            <button type="button" id="totalItemsCount" class="itemsstyle mycart-items" style="margin-bottom: 0px;">
+                Total items : <p id="totalItemsCounter" class="pTagDesign">0</p>
+            </button>
+            <button type="button" id="totalCartValue" class="itemsstyle mycart-items">
+                Cart value : <p id="totalCartPrice" class="pTagDesign">0</p> $
+            </button>
+        </section>
+    </section>
+</body>
+<script src="./script/script.js"></script>
+</html>

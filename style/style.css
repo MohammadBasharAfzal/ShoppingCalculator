@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #e4cdad;
+}
+#header-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+}
+#headerPop {
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0.1px solid black;
+}
+#buy {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+#items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.rowDesign {
+    display: flex;
+    display: row;
+}
+.imagesStyle {
+    width: 20vw;
+    height: 80px;
+    margin: 15px;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-items {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px;
+}
+.add-items .add {
+    background-color: rgb(59, 187, 59); 
+    border-color: darkgreen;
+}
+.add-items .minus {
+    background-color: rgb(200, 31, 31); 
+    border-color: darkred;
+}
+.add-items .itemQuantity {
+    background-color: lightblue; 
+    margin: 0px 10px; 
+    border-color: black;
+}
+.buttonStyle {
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: cornflowerblue;
+}
+#calculation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemsstyle {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+#footer {
+    display: flex;
+    flex-direction: row;
+}
+.price {
+    background-color: #db2485; 
+    margin: 0px 10px;
+}
+.pTagDesign {
+    padding: 0;
+    margin: 0;
+}
+#totalItemsCount {
+    display: flex;
+    flex-direction: row;
+}
